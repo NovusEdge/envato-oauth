@@ -1,0 +1,20 @@
+# Include important documentation and configuration files
+include README.md
+include LICENSE
+include requirements.txt
+include .env.example
+
+# Include package data
+recursive-include envato_oauth *.py
+recursive-include envato_oauth *.json
+recursive-include envato_oauth *.md
+
+# Exclude unnecessary files
+exclude *.pyc
+exclude .DS_Store
+exclude .env
+exclude *.log
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * .DS_Store
+recursive-exclude * *.log
