@@ -16,7 +16,8 @@ from auth import EnvatoAuth
 import os
 import dotenv
 
-dotenv.load_dotenv(override=True)
+# Load .env file but don't override existing environment variables
+dotenv.load_dotenv(override=False)
 
 # Global variables for the FastAPI app
 app = FastAPI(title="Envato OAuth Server", description="OAuth callback handler for Envato API")
