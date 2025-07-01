@@ -234,3 +234,5 @@ test-results/
 # Documentation builds
 docs/build/
 site/
+
+.env
