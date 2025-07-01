@@ -58,10 +58,10 @@ envato-oauth = "oauth_server:main"
 envato-auth = "oauth_server:main"
 
 [project.urls]
-Homepage = "https://github.com/yourusername/envato-oauth"
-Documentation = "https://github.com/yourusername/envato-oauth/docs"
-Repository = "https://github.com/yourusername/envato-oauth"
-"Bug Reports" = "https://github.com/yourusername/envato-oauth/issues"
+Homepage = "https://github.com/NovusEdge/envato-oauth"
+Documentation = "https://github.com/NovusEdge/envato-oauth/docs"
+Repository = "https://github.com/NovusEdge/envato-oauth"
+"Bug Reports" = "https://github.com/NovusEdge/envato-oauth/issues"
 
 [tool.setuptools]
 py-modules = ["auth", "envato_oauth", "oauth_server", "api_client_example"]
