@@ -20,7 +20,7 @@ __author__ = "Envato API OAuth Package"
 __email__ = "khimanialiasgar@gmail.com"
 
 # Import main functions for easy access
-from .envato_oauth import (
+from envato_oauth import (
     get_envato_access_token,
     get_envato_auth_headers,
     is_authenticated,
@@ -33,12 +33,12 @@ from .envato_oauth import (
     clear_auth
 )
 
-from .oauth_server import (
+from oauth_server import (
     authenticate_with_browser,
     OAuthServer
 )
 
-from .auth import EnvatoAuth
+from auth import EnvatoAuth
 
 __all__ = [
     # Main OAuth functions

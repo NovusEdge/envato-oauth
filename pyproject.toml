@@ -64,8 +64,7 @@ Repository = "https://github.com/yourusername/envato-oauth"
 "Bug Reports" = "https://github.com/yourusername/envato-oauth/issues"
 
 [tool.setuptools]
-packages = ["envato_oauth"]
-py-modules = ["auth", "envato_oauth", "oauth_server"]
+py-modules = ["auth", "envato_oauth", "oauth_server", "api_client_example"]
 
 [tool.setuptools.package-data]
 "*" = ["*.md", "*.txt", "*.json", ".env.example"]

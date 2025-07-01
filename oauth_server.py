@@ -105,6 +105,11 @@ async def oauth_callback(request: Request):
         oauth_result["completed"] = True
         raise HTTPException(status_code=400, detail="Missing authorization code or error parameter")
 
+@app.get("/app/envato/callback")
+async def oauth_callback_path(request: Request):
+    """Handle OAuth callback from Envato (with path)"""
+    return await oauth_callback(request)
+
 @app.get("/status")
 async def status():
     """Check server status and OAuth completion state"""
@@ -143,7 +148,7 @@ class OAuthServer:
             # Configure uvicorn to run without logs in the main thread
             config = uvicorn.Config(
                 app=app,
-                host="localhost",
+                host="127.0.0.1",  # Bind only to IPv4 localhost
                 port=self.port,
                 log_level="error",  # Minimize logging
                 access_log=False
